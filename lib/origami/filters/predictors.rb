@@ -68,7 +68,7 @@ module Origami
             def post_prediction(data)
                 return data unless @params.Predictor.is_a?(Integer)
 
-                apply_post_prediction(data, prediction_parameters)
+                apply_post_prediction(data, **prediction_parameters)
             end
 
             def prediction_parameters

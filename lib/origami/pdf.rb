@@ -123,7 +123,7 @@ module Origami
             #
             # Reads and parses a PDF file from disk.
             #
-            def read(path, options = {})
+            def read(path, **options)
                 path = File.expand_path(path) if path.is_a?(::String)
                 lazy = options[:lazy]
 
